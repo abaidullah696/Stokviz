@@ -24,3 +24,5 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   const navLinks = document.getElementById("navp2");
   navLinks.classList.toggle("active"); // Toggle the active class to show/hide nav links
 });
+
+//login page js
