@@ -8,8 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
-    background-color: #000000;
-    color: #fff;
+  
 }
 
 /* Navigation Styling */
@@ -78,14 +77,34 @@ nav h1 i {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #b82b2b;
+    padding: 10px 20px;
+    transition: background-color 0.7s ease;
+    border-radius: 5px;
 }
 
 /* Show Dropdown on Hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content:hover {
     display: block;
 }
 
+
+.nav-links a{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+   text-decoration: none;
+
+}
+.nav-items:hover {
+    background-color: #b82b2b;
+    padding: 10px 20px;
+    transition: background-color 0.7s ease;
+    border-radius: 5px;
+}
+.nav-items {
+    color: #fff;
+}
 /* Responsive Styles */
 /* Responsive Styles */
 @media (max-width: 768px) {
