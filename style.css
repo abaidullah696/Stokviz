@@ -144,6 +144,10 @@ button:hover {
     padding: 20px !important;
    
 }
+.heat-map{
+    display: flex;
+    justify-content: space-evenly;
+}
 //login css
 
 .gradient-custom {
