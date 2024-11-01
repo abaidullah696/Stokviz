@@ -140,12 +140,9 @@ button:hover {
   }
 
 #main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height:91vh !important;
     padding: 20px !important;
+   
 }
 //login css
 
@@ -167,6 +164,7 @@ button:hover {
 @media (max-width: 768px) {
     nav {
         padding: 15px 20px;
+        
     }
 
     nav h1 {
