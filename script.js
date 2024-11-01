@@ -19,9 +19,15 @@ document.querySelectorAll(".dropdown").forEach((dropdown) => {
 
 // script.js
 
+// document.getElementById("toggleButton").addEventListener("click", function () {
+//   const navLinks = document.getElementById("navp2");
+//   navLinks.classList.toggle("active"); // Toggle the active class to show/hide nav links
+// });
+
+// Add this to your script.js
 document.getElementById("toggleButton").addEventListener("click", function () {
-  const navLinks = document.getElementById("navp2");
-  navLinks.classList.toggle("active"); // Toggle the active class to show/hide nav links
+  this.classList.toggle("active"); // Toggle active state
+  document.getElementById("navp2").classList.toggle("active"); // Show/hide nav links
 });
 
 //login register logic page js
