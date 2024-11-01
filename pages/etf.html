@@ -50,8 +50,32 @@
 
     <!-- Main Content -->
     <section id="main-content">
-      <h2>Welcome to Stockviz</h2>
-      <p>Explore stock data, screener options, and charts!</p>
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright">
+          <a href="/" rel="noopener nofollow" target="_blank"
+            ><span class="blue-text">Track all markets on Stokviz</span></a
+          >
+        </div>
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js"
+          async
+        >
+            {
+            "width": "100%",
+            "height": "100%",
+            "defaultColumn": "overview",
+            "defaultScreen": "general",
+            "market": "crypto",
+            "showToolbar": true,
+            "colorTheme": "dark",
+            "locale": "en"
+          }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
     </section>
 
     <script src="../script.js"></script>
