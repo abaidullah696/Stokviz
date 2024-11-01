@@ -25,4 +25,47 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   navLinks.classList.toggle("active"); // Toggle the active class to show/hide nav links
 });
 
-//login page js
+//login register logic page js
+// Handle sign-up form submission
+document
+  .getElementById("signup-btn")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form data
+    const name = document.getElementById("typeNameX").value;
+    const email = document.getElementById("typeEmailX").value;
+    const password = document.getElementById("typePasswordX").value;
+
+    if (name && email && password) {
+      // Save data to localStorage for demo
+      localStorage.setItem("userEmail", email);
+      localStorage.setItem("userPassword", password);
+      alert("Signup successful! Please login now.");
+      window.location.href = "/pages/login.html"; // Redirect to login
+    } else {
+      alert("Please fill in all fields.");
+    }
+  });
+
+// Handle login form submission
+document
+  .getElementById("login-btn")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+
+    // Get login data
+    const email = document.getElementById("loginEmail").value;
+    const password = document.getElementById("loginPassword").value;
+
+    // Check against stored data
+    const storedEmail = localStorage.getItem("userEmail");
+    const storedPassword = localStorage.getItem("userPassword");
+
+    if (email === storedEmail && password === storedPassword) {
+      alert("Login successful!");
+      window.location.href = "/index.html"; // Redirect after login
+    } else {
+      alert("Invalid email or password.");
+    }
+  });
