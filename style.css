@@ -6,8 +6,10 @@
 }
 
 body {
+    height: 100%;
+    width: 100%;
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background-color: #000000;
 }
 
@@ -137,7 +139,14 @@ button:hover {
     background-color: rgba(104, 85, 224, 1);
   }
 
-
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:91vh !important;
+    padding: 20px !important;
+}
 //login css
 
 .gradient-custom {
