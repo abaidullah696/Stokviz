@@ -206,5 +206,9 @@ button:hover {
         font-size: 14px;
         padding: 8px 16px;
     }
+    .heat-map{
+        display: block;
+        /* justify-content: space-evenly; */
+    }
 }
 
